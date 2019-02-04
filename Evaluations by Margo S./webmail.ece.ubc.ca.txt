@@ -1,0 +1,62 @@
+KLEE: UNASSISTED AND AUTOMATIC GENERATION OF HIGH-COVERAGE TESTS FOR
+COMPLEX SYSTEMS PROGRAMS
+
+Part I: Answer at least the following questions:	
+	What is the purpose? 				3 	3
+	What is the hypothesis? 			3 	3
+	What is the experimental setup?			3 	3
+	What is good/bad about ES?			3 	2
+		(I would have liked a bit of your thoughts on their
+		choice of code to evaluate; to what did they compare
+		Klee, etc.)
+	How well was the research carried out?		3 	3
+	Are the results believable?			3 	3
+	What could have been done differently?		3 	3
+	What lessons did you learn?			3 	3
+	
+	Correctness of the Eval				3	3
+	Writing (overall)				3	3
+	
+Part I Total:						30	29
+	
+Part II	
+	
+	Identify what they are trying to reproduce	5 	5
+	Experimental setup description			15 	15
+	Discuss assumptions				15 	15
+	list of tools/traces				5 	5
+	
+Part II Total:						40	40
+	
+Part III: Postmortem	
+	Differences in results (analysis)		20 	18
+		(This was really a tough item, since you couldn't
+		reproduce anything, which isn't shocking; you tried
+		pretty much everything, so I gave you almost all the
+		points anyway.)
+	Discussion of reproducibility			5 	5
+	Assessment					5 	5
+	
+Part III Total:						30	28
+	
+TOTAL:							100	97
+
+
+Hypothesis: I think that they don't really state their hypothesis, but
+my interpretation is that it's really more about their technique for
+efficiently exploring the state space than about the bugs. The existence
+of bugs is an assumption of the work. Their contribution is a practical
+way to search the ridiculously large symbolic state space.
+
+What makes you think that Klee was some how designed "for" coreutils?  Is
+there anything in their design decisions that made you think this?
+
+One of the things I always like about Dawson Engler papers is that he
+doesn't have just one or two examples, he runs his tools on hundreds
+of programs. So while he groups "coreutils" as one thing, recall that
+it's 89 different programs.  That's actually an enormous evaluation,
+especially relevant to most papers, which run on one or two programs.
+
+You did a really good job explaining just what you tried and how awful it
+was.  The writeup was actually quite enjoyable to read (I like your sense
+of humor about how awful it was).
